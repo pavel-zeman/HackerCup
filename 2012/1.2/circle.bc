@@ -1,0 +1,19 @@
+
+t = read();
+for(i=1;i<=t;i++) {
+  n = read();
+  k = read();
+  k = k + 1;
+  kk = 0;
+  d = 1;
+
+  while (d <= (k - 1) * n) {
+            kk = kk + 1;
+            res = d * k ;
+            if ((res % (k - 1)) == 0) res = res / (k - 1) else res = res / (k - 1) + 1
+            d = res;
+        }
+
+        out = k * n + 1 - d;
+print out, "\n";
+}
