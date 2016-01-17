@@ -95,8 +95,7 @@ void fail() {
 }
 
 int main(void) {
-    int cases;
-    scanf("%d", &cases);
+    int cases = getInt();
     for (int cc=0;cc<cases;cc++) {
         printf("Case #%d:\n", cc + 1);
     }
